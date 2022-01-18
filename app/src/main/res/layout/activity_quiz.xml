@@ -56,13 +56,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:contentDescription="@string/previous_button"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
             android:src="@drawable/arrow_left" />
 
         <ImageButton
             android:id="@+id/next_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/arrow_right"
-            android:contentDescription="@string/next_button" />
+            android:contentDescription="@string/next_button"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:src="@drawable/arrow_right" />
     </LinearLayout>
 </LinearLayout>
