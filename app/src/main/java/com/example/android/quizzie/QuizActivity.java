@@ -98,7 +98,7 @@ public class QuizActivity extends AppCompatActivity {
                 if (mCurrentIndex == 0)
                     mCurrentIndex = mQuestions.length - 1;
                 else
-                    mCurrentIndex = (mCurrentIndex + 1) % mQuestions.length;
+                    mCurrentIndex = (mCurrentIndex - 1) % mQuestions.length;
                 updateQuestion();
             }
         });
@@ -107,7 +107,7 @@ public class QuizActivity extends AppCompatActivity {
         mNextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mCurrentIndex = (mCurrentIndex + 1) % mQuestions.length;
+                mCurrentIndex = (mCurrentIndex - 1) % mQuestions.length;
                 updateQuestion();
 
             }
